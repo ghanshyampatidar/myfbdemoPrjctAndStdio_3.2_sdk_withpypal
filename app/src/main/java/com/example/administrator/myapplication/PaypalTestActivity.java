@@ -30,17 +30,8 @@ public class PaypalTestActivity extends Activity {
     // set to PaymentActivity.ENVIRONMENT_NO_NETWORK to kick the tires without communicating to PayPal's servers.
     private static final String CONFIG_ENVIRONMENT = PaymentActivity.ENVIRONMENT_SANDBOX;
 
-//    // note that these credentials will differ between live & sandbox environments.
-//    private static final String CONFIG_CLIENT_ID = "AXJVRhC7DvWS3Br2NNUbF7twDnB-20ggOOx2huKOb2FwH9IG3oiFqtoafze4";
-    // when testing in sandbox, this is likely the -facilitator email address.
-//    private static final String CONFIG_RECEIVER_EMAIL = "priyankakaushal88-facilitator@gmail.com";
-
-
-//    private static final String CONFIG_CLIENT_ID = "AdyrQuE3tNCcArZpVnTQjvPUt5SwufW0CZZ3Hh-MdnS221h29MmxItkBk_my6nimQHmGxggqgCUPnG4z";
-//    private static final String CONFIG_RECEIVER_EMAIL = "ghanshyam.ypsilon-facilitator@gmail.com";
-
-    private static final String CONFIG_CLIENT_ID = "AcoiH9I9TL8dLQC6YJePmu5rWE2h0dLYeYuaRoAtvHdd1pH4XUHbT-GZRg4FIBy9IkjMGCGbPUxBLBZo";
-    private static final String CONFIG_RECEIVER_EMAIL = "ghanshyam.patidar34mca-facilitator@gmail.com";
+    private static final String CONFIG_CLIENT_ID = "AcoiHE2h0dLYeYuaRoAtvHdd1pH4XUHbT-GZRg4FIBy9IkjMGCGbPUxBLBZo";
+    private static final String CONFIG_RECEIVER_EMAIL = "test-facilitator@gmail.com";
 
     Context mContext;
 
@@ -201,61 +192,6 @@ public class PaypalTestActivity extends Activity {
         }
 
     }
-
-
-
-	/*
-	 * this method called when payment is submitted through paypal successfully
-	 * for store payment information on server for specific course for specific
-	 * student
-	 */
-//
-//    public void sendAdmissionPaymentInfoToServer(MultipartEntity multipart){
-//
-//
-//        if (ValidationConstant.isNetworkAvailable(mContext)) {
-//
-//            try {
-//
-//                new AdmissionPaymentAsyTask(mContext,new AdmissionPaymentListener(),multipart).execute();
-//
-//
-//            } catch (Exception e) {
-//
-//                e.printStackTrace();
-//
-//            }
-//
-//        } else {
-//
-//            ValidationConstant.showNetworkError(mContext);
-//
-//        }
-//
-//    }
-
-
-//    public class AdmissionPaymentListener {
-//
-//        public void onSuccess() {
-//
-//
-//            TextMessagePopup.showTextMessage(mContext,"Transaction Success");
-//            Intent intent=new Intent();
-//            setResult(Activity.RESULT_OK,intent);
-//            finish();
-//
-//        }
-//
-//        public void onError(String error) {
-//
-//            finish();
-//            TextMessagePopup.showTextMessage(mContext,"Transaction Failure");
-////			RefundTransaction
-////			MassPay
-//
-//        }
-//    }
 
 
     ProgressDialog progress;
