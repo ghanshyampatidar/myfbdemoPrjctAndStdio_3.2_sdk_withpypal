@@ -59,22 +59,6 @@ public class MainActivity extends ActionBarActivity {
     ArrayList<String> friends_list;
 
 
-//    private Session.StatusCallback callback = new Session.StatusCallback() {
-//        @Override
-//        public void call(Session session, SessionState state,
-//                         Exception exception) {
-//            onSessionStateChange(session, state, exception);
-//
-//            if (session.isOpened()) {
-//                Log.i(TAG,"Access Token"+ session.getAccessToken());
-//                Request.newMeRequest(session,
-//                        new Request.GraphUserCallback() {
-//                            @Override
-//                            public void onCompleted(GraphUser user,Response response) {
-//
-//                            }
-//                        });
-
 
     private Session.StatusCallback callback = new Session.StatusCallback() {
 
